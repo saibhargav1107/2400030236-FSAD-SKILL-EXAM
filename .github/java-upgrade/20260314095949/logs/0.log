@@ -1,0 +1,440 @@
+2026-03-14T09:59:49.982Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T09:59:49.984Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "precheckCompleted",
+  "status": "succeeded",
+  "phase": "precheck"
+}}).
+2026-03-14T09:59:49.985Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T09:59:49.999Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T09:59:50.003Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:00:34.476Z [INFO] ---------------------prepare list_jdks----------------------
+2026-03-14T10:00:34.478Z [INFO] [Tool.prepareInvocation]({name: list_jdks, input: {
+  "sessionId": "20260314095949"
+}}).
+2026-03-14T10:00:34.480Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:00:34.482Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-03-14T10:00:34.484Z [INFO] ----------------------prepared list_jdks----------------------
+2026-03-14T10:00:34.554Z [INFO] ----------------------invoke list_jdks----------------------
+2026-03-14T10:00:34.555Z [INFO] [Tool.invoke]({name: list_jdks, input: {
+  "sessionId": "20260314095949"
+}}).
+2026-03-14T10:00:34.556Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:00:34.614Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 24.0.2\n   📁 Path: C:\\Program Files\\Java\\jdk-24\\bin\n   🏷️ Source: others\n\nTotal: 1 JDK installation(s) found"
+}}).
+2026-03-14T10:00:34.616Z [INFO] ----------------------invoked list_jdks----------------------
+2026-03-14T10:00:34.636Z [INFO] ---------------------prepare list_mavens----------------------
+2026-03-14T10:00:34.637Z [INFO] [Tool.prepareInvocation]({name: list_mavens, input: {
+  "sessionId": "20260314095949",
+  "includeVersion": true
+}}).
+2026-03-14T10:00:34.638Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:00:34.639Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-03-14T10:00:34.640Z [INFO] ----------------------prepared list_mavens----------------------
+2026-03-14T10:00:34.703Z [INFO] ----------------------invoke list_mavens----------------------
+2026-03-14T10:00:34.704Z [INFO] [Tool.invoke]({name: list_mavens, input: {
+  "sessionId": "20260314095949",
+  "includeVersion": true
+}}).
+2026-03-14T10:00:34.705Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:00:34.710Z [INFO] [Tool.invoke]({result: {
+  "message": "No Maven installations found."
+}}).
+2026-03-14T10:00:34.711Z [INFO] ----------------------invoked list_mavens----------------------
+2026-03-14T10:01:43.228Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:01:43.229Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planInitialized",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:43.231Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:01:43.233Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:01:43.234Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:01:43.288Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:01:43.289Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planInitialized",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:43.290Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:01:43.291Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planInitialized' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:01:43.291Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:01:44.866Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:01:44.867Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "environmentAnalyzed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:44.868Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:01:44.869Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:01:44.870Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:01:44.938Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:01:44.939Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "environmentAnalyzed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:44.939Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:01:44.940Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentAnalyzed' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:01:44.941Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:01:47.726Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:01:47.728Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "dependenciesAnalyzed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:47.731Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:01:47.732Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:01:47.732Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:01:47.807Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:01:47.808Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "dependenciesAnalyzed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:47.810Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:01:47.813Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'dependenciesAnalyzed' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:01:47.813Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:01:49.505Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:01:49.507Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "upgradePathDesigned",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:49.510Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:01:49.513Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:01:49.515Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:01:49.821Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:01:49.824Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "upgradePathDesigned",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:49.827Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:01:49.830Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradePathDesigned' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:01:49.832Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:01:52.084Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:01:52.087Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planReviewed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:52.090Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:01:52.093Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:01:52.096Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:01:52.318Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:01:52.320Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planReviewed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:01:52.323Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:01:52.328Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:01:52.329Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:03:12.507Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:03:12.508Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planConfirmed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:03:12.510Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:03:12.511Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:03:12.513Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:03:12.576Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:03:12.577Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planConfirmed",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-03-14T10:03:12.577Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:03:12.578Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planConfirmed' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:03:12.578Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:03:30.856Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:03:30.857Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planExecutionStarted",
+  "status": "succeeded",
+  "phase": "execute"
+}}).
+2026-03-14T10:03:30.857Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:03:30.858Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:03:30.859Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:03:30.912Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:03:30.912Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "planExecutionStarted",
+  "status": "succeeded",
+  "phase": "execute"
+}}).
+2026-03-14T10:03:30.913Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:03:31.292Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:03:31.293Z [INFO] ----------------------invoked report_event----------------------
+2026-03-14T10:03:37.317Z [INFO] ---------------------prepare install_jdk----------------------
+2026-03-14T10:03:37.318Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "sessionId": "20260314095949",
+  "version": "21"
+}}).
+2026-03-14T10:03:37.319Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:03:38.613Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nThis tool will download and install JDK 21 from Microsoft with below settings.\n- **Version**: 21\n- **Vendor**: Microsoft\n- **Url**: https://aka.ms/download-jdk/microsoft-jdk-21.0.8-windows-x64.zip\n- **Destination**: `C:\\Users\\saibh\\.jdk`\n- **Checksum**: SHA256: 6ecfa864b95a45cde05d92351edf06d33b778669499b485bb8414145704fae0a\n- **Signature**: https://aka.ms/download-jdk/microsoft-jdk-21.0.8-windows-x64.zip.sig\n- **Public Key**: http://aka.ms/microsoft_jdk_public_key\n"
+  }
+}}).
+2026-03-14T10:03:38.614Z [INFO] ----------------------prepared install_jdk----------------------
+2026-03-14T10:03:55.557Z [INFO] ----------------------invoke install_jdk----------------------
+2026-03-14T10:03:55.558Z [INFO] [Tool.invoke]({name: install_jdk, input: {
+  "sessionId": "20260314095949",
+  "version": "21"
+}}).
+2026-03-14T10:03:55.559Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:04:17.274Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\saibh\\.jdk\\jdk-21.0.8\\bin",
+    "version": "21.0.8"
+  },
+  "message": "JDK 21 is installed at C:\\Users\\saibh\\.jdk\\jdk-21.0.8\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "21"
+  }
+}}).
+2026-03-14T10:04:17.276Z [INFO] ----------------------invoked install_jdk----------------------
+2026-03-14T10:04:17.870Z [INFO] ---------------------prepare install_maven----------------------
+2026-03-14T10:04:17.871Z [INFO] [Tool.prepareInvocation]({name: install_maven, input: {
+  "sessionId": "20260314095949",
+  "version": "3.9.11"
+}}).
+2026-03-14T10:04:17.871Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:04:18.809Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install Maven",
+  "confirmationMessages": {
+    "title": "Download and install Maven",
+    "message": "\nThis tool will download and install Maven 3.9.11 from Apache with below settings.\n- **Version**: 3.9.11\n- **Vendor**: Apache\n- **Url**: https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip\n- **Destination**: `C:\\Users\\saibh\\.maven`\n- **Checksum**: SHA512: 03e2d65d4483a3396980629f260e25cac0d8b6f7f2791e4dc20bc83f9514db8d0f05b0479e699a5f34679250c49c8e52e961262ded468a20de0be254d8207076\n- **Signature**: https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip.asc\n- **Public Key**: https://downloads.apache.org/maven/KEYS\n"
+  }
+}}).
+2026-03-14T10:04:18.809Z [INFO] ----------------------prepared install_maven----------------------
+2026-03-14T10:05:20.435Z [INFO] ----------------------invoke install_maven----------------------
+2026-03-14T10:05:20.436Z [INFO] [Tool.invoke]({name: install_maven, input: {
+  "sessionId": "20260314095949",
+  "version": "3.9.11"
+}}).
+2026-03-14T10:05:20.436Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:05:21.685Z [ERROR] [Tool.invoke] error occurs when invoking tool install_maven: Error: Failed to fetch https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip: Not Found.
+2026-03-14T10:05:21.687Z [INFO] ----------------------invoked install_maven----------------------
+2026-03-14T10:05:27.522Z [INFO] ---------------------prepare install_maven----------------------
+2026-03-14T10:05:27.524Z [INFO] [Tool.prepareInvocation]({name: install_maven, input: {
+  "sessionId": "20260314095949",
+  "version": "latest"
+}}).
+2026-03-14T10:05:27.526Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:05:28.230Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install Maven",
+  "confirmationMessages": {
+    "title": "Download and install Maven",
+    "message": "\nThis tool will download and install Maven latest from Apache with below settings.\n- **Version**: latest\n- **Vendor**: Apache\n- **Url**: https://dlcdn.apache.org/maven/maven-3/3.9.14/binaries/apache-maven-3.9.14-bin.zip\n- **Destination**: `C:\\Users\\saibh\\.maven`\n- **Checksum**: SHA512: 4122c5e7a8794260539dd8fcd78480549511babff2f85e2b1258c8d4cf33c50af90f65d323f43c88d4959f35a8f37ced3eca802983caa6eb7cc81b16af936ab0\n- **Signature**: https://dlcdn.apache.org/maven/maven-3/3.9.14/binaries/apache-maven-3.9.14-bin.zip.asc\n- **Public Key**: https://downloads.apache.org/maven/KEYS\n"
+  }
+}}).
+2026-03-14T10:05:28.231Z [INFO] ----------------------prepared install_maven----------------------
+2026-03-14T10:05:32.444Z [INFO] ----------------------invoke install_maven----------------------
+2026-03-14T10:05:32.444Z [INFO] [Tool.invoke]({name: install_maven, input: {
+  "sessionId": "20260314095949",
+  "version": "latest"
+}}).
+2026-03-14T10:05:32.445Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:05:35.767Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "mvn",
+    "path": "C:\\Users\\saibh\\.maven\\maven-3.9.14\\bin",
+    "version": "3.9.14"
+  },
+  "message": "Maven latest is installed at C:\\Users\\saibh\\.maven\\maven-3.9.14\\bin",
+  "telemetry": {
+    "tool": "Maven",
+    "version": "latest"
+  }
+}}).
+2026-03-14T10:05:35.768Z [INFO] ----------------------invoked install_maven----------------------
+2026-03-14T10:05:39.047Z [INFO] ---------------------prepare list_jdks----------------------
+2026-03-14T10:05:39.048Z [INFO] [Tool.prepareInvocation]({name: list_jdks, input: {
+  "sessionId": "20260314095949"
+}}).
+2026-03-14T10:05:39.049Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:05:39.050Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-03-14T10:05:39.051Z [INFO] ----------------------prepared list_jdks----------------------
+2026-03-14T10:05:39.118Z [INFO] ----------------------invoke list_jdks----------------------
+2026-03-14T10:05:39.119Z [INFO] [Tool.invoke]({name: list_jdks, input: {
+  "sessionId": "20260314095949"
+}}).
+2026-03-14T10:05:39.120Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:05:39.263Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 21.0.8\n   📁 Path: C:\\Users\\saibh\\.jdk\\jdk-21.0.8\\bin\n   🏷️ Source: install\n\n2. Java 24.0.2\n   📁 Path: C:\\Program Files\\Java\\jdk-24\\bin\n   🏷️ Source: others\n\nTotal: 2 JDK installation(s) found"
+}}).
+2026-03-14T10:05:39.264Z [INFO] ----------------------invoked list_jdks----------------------
+2026-03-14T10:05:39.299Z [INFO] ---------------------prepare list_mavens----------------------
+2026-03-14T10:05:39.301Z [INFO] [Tool.prepareInvocation]({name: list_mavens, input: {
+  "sessionId": "20260314095949",
+  "includeVersion": true
+}}).
+2026-03-14T10:05:39.302Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:05:39.303Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-03-14T10:05:39.304Z [INFO] ----------------------prepared list_mavens----------------------
+2026-03-14T10:05:39.422Z [INFO] ----------------------invoke list_mavens----------------------
+2026-03-14T10:05:39.423Z [INFO] [Tool.invoke]({name: list_mavens, input: {
+  "sessionId": "20260314095949",
+  "includeVersion": true
+}}).
+2026-03-14T10:05:39.425Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:05:41.817Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. Maven 3.9.14\n   📁 Path: C:\\Users\\saibh\\.maven\\maven-3.9.14\\bin\n   🏷️ Source: install\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-03-14T10:05:41.819Z [INFO] ----------------------invoked list_mavens----------------------
+2026-03-14T10:08:05.358Z [INFO] ---------------------prepare list_jdks----------------------
+2026-03-14T10:08:05.359Z [INFO] [Tool.prepareInvocation]({name: list_jdks, input: {
+  "sessionId": "20260314095949",
+  "version": "21"
+}}).
+2026-03-14T10:08:05.360Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:08:05.361Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-03-14T10:08:05.361Z [INFO] ----------------------prepared list_jdks----------------------
+2026-03-14T10:08:05.399Z [INFO] ----------------------invoke list_jdks----------------------
+2026-03-14T10:08:05.400Z [INFO] [Tool.invoke]({name: list_jdks, input: {
+  "sessionId": "20260314095949",
+  "version": "21"
+}}).
+2026-03-14T10:08:05.400Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:08:05.456Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 21.0.8\n   📁 Path: C:\\Users\\saibh\\.jdk\\jdk-21.0.8\\bin\n   🏷️ Source: install\n\nTotal: 1 JDK installation(s) found"
+}}).
+2026-03-14T10:08:05.457Z [INFO] ----------------------invoked list_jdks----------------------
+2026-03-14T10:08:05.467Z [INFO] ---------------------prepare list_mavens----------------------
+2026-03-14T10:08:05.468Z [INFO] [Tool.prepareInvocation]({name: list_mavens, input: {
+  "sessionId": "20260314095949",
+  "includeVersion": true
+}}).
+2026-03-14T10:08:05.468Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:08:05.469Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-03-14T10:08:05.469Z [INFO] ----------------------prepared list_mavens----------------------
+2026-03-14T10:08:05.509Z [INFO] ----------------------invoke list_mavens----------------------
+2026-03-14T10:08:05.509Z [INFO] [Tool.invoke]({name: list_mavens, input: {
+  "sessionId": "20260314095949",
+  "includeVersion": true
+}}).
+2026-03-14T10:08:05.510Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:08:06.245Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. Maven 3.9.14\n   📁 Path: C:\\Users\\saibh\\.maven\\maven-3.9.14\\bin\n   🏷️ Source: install\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-03-14T10:08:06.246Z [INFO] ----------------------invoked list_mavens----------------------
+2026-03-14T10:08:43.786Z [INFO] ---------------------prepare report_event----------------------
+2026-03-14T10:08:43.788Z [INFO] [Tool.prepareInvocation]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "environmentSetup",
+  "status": "succeeded",
+  "phase": "execute",
+  "message": "Installed JDK 21 and Maven for upgrade execution.",
+  "details": {
+    "jdkPath": "C:\\Users\\saibh\\.jdk\\jdk-21.0.8\\bin",
+    "buildToolPath": "C:\\Users\\saibh\\.maven\\maven-3.9.14\\bin\\mvn.cmd"
+  }
+}}).
+2026-03-14T10:08:43.790Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-03-14T10:08:43.791Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-03-14T10:08:43.791Z [INFO] ----------------------prepared report_event----------------------
+2026-03-14T10:08:43.852Z [INFO] ----------------------invoke report_event----------------------
+2026-03-14T10:08:43.853Z [INFO] [Tool.invoke]({name: report_event, input: {
+  "sessionId": "20260314095949",
+  "projectPath": "c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill",
+  "event": "environmentSetup",
+  "status": "succeeded",
+  "phase": "execute",
+  "message": "Installed JDK 21 and Maven for upgrade execution.",
+  "details": {
+    "jdkPath": "C:\\Users\\saibh\\.jdk\\jdk-21.0.8\\bin",
+    "buildToolPath": "C:\\Users\\saibh\\.maven\\maven-3.9.14\\bin\\mvn.cmd"
+  }
+}}).
+2026-03-14T10:08:43.854Z [INFO] [Tool.invoke] do invoke.
+2026-03-14T10:08:43.855Z [INFO] Project c:\Users\saibh\Desktop\FSAD-SKILL-EXAM\skill is not a maven project, try to get java version from gradle
+2026-03-14T10:08:43.866Z [INFO] Try to get java version from gradle config files: 
+2026-03-14T10:08:43.867Z [INFO] Try to get java version from gradle properties: undefined
+2026-03-14T10:08:43.867Z [INFO] Project java version: 8
+2026-03-14T10:08:43.869Z [ERROR] Unsupported project type: eclipse. Only Maven, Maven Wrapper, and Gradle Wrapper projects are supported.
+2026-03-14T10:08:43.870Z [ERROR] [ReportEventTool] Failed to send project info telemetry: UserError: Unsupported project type: eclipse. Only Maven, Maven Wrapper, and Gradle Wrapper projects are supported. Please choose a valid supported project
+2026-03-14T10:08:43.872Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260314095949,\nSession Dir: c:\\Users\\saibh\\Desktop\\FSAD-SKILL-EXAM\\skill\\.github\\java-upgrade\\20260314095949"
+}}).
+2026-03-14T10:08:43.872Z [INFO] ----------------------invoked report_event----------------------

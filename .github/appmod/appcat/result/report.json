@@ -1,0 +1,300 @@
+{
+  "version": "1.0.0",
+  "producer": "Java AppCAT CLI",
+  "metadata": {
+    "analysisStartTime": "2026-03-14T09:53:56.9295884Z",
+    "analysisEndTime": "2026-03-14T09:54:47.5810769Z",
+    "status": "Complete",
+    "privacyMode": "Protected",
+    "privacyModeHelpUrl": "https://aka.ms/appcat-privacy-mode",
+    "targetIds": [
+      "azure-appservice",
+      "azure-container-apps",
+      "azure-aks"
+    ],
+    "targetDisplayNames": [
+      "Azure App Service",
+      "Azure Container Apps",
+      "Azure Kubernetes Service"
+    ],
+    "capabilities": [],
+    "os": []
+  },
+  "summary": {
+    "totalProjects": 1,
+    "totalIssues": 4,
+    "totalIncidents": 5,
+    "totalEffort": 23,
+    "charts": {
+      "severity": {
+        "mandatory": 2,
+        "optional": 0,
+        "potential": 3,
+        "information": 0
+      },
+      "category": {
+        "containerization": 1,
+        "database-migration": 2,
+        "jakarta-migration": 1,
+        "local-resource-access": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": ".",
+      "issues": 4,
+      "storyPoints": 23,
+      "properties": {
+        "appName": "skill",
+        "jdkVersion": "17",
+        "frameworks": null,
+        "languages": [
+          "Java"
+        ],
+        "tools": [
+          "Maven"
+        ]
+      },
+      "incidents": [
+        {
+          "ruleId": "azure-database-mysql-01000",
+          "incidentId": "20ea6351-c61e-415d-9a45-b1a54af8d0a3",
+          "location": "src/main/resources/hibernate.cfg.xml",
+          "locationKind": "File",
+          "line": 10,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 5,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 5,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 5,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
+          "ruleId": "azure-database-mysql-01000",
+          "incidentId": "84d32d9d-cec0-4b56-b535-2b8816c99ba7",
+          "location": "",
+          "locationKind": "",
+          "targets": {
+            "azure-aks": {
+              "effort": 5,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 5,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 5,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=azure/springboot"
+          ]
+        },
+        {
+          "ruleId": "localhost-jdbc-00002",
+          "incidentId": "b5c26f84-a0dc-4472-87f3-fef60d808e55",
+          "location": "src/main/resources/hibernate.cfg.xml",
+          "locationKind": "File",
+          "line": 10,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 5,
+              "severity": "mandatory"
+            },
+            "azure-appservice": {
+              "effort": 5,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 5,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "jakarta-database-00002",
+          "incidentId": "e909b1d1-6820-408c-9def-f75f25cf0c18",
+          "location": "pom.xml",
+          "locationKind": "File",
+          "line": 35,
+          "column": 0,
+          "targets": {
+            "azure-aks": {
+              "effort": 5,
+              "severity": "potential"
+            },
+            "azure-appservice": {
+              "effort": 5,
+              "severity": "potential"
+            },
+            "azure-container-apps": {
+              "effort": 5,
+              "severity": "potential"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        },
+        {
+          "ruleId": "dockerfile-00000",
+          "incidentId": "b63bebb1-863d-47bd-961c-e30dbe291a81",
+          "location": "",
+          "locationKind": "",
+          "targets": {
+            "azure-aks": {
+              "effort": 3,
+              "severity": "mandatory"
+            },
+            "azure-container-apps": {
+              "effort": 3,
+              "severity": "mandatory"
+            }
+          },
+          "labels": [
+            "type=violation",
+            "ruleset=cloud-readiness"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "azure-database-mysql-01000": {
+      "id": "azure-database-mysql-01000",
+      "description": "To migrate a Java application that uses a MySQL database to Azure, you can follow these recommendations:\n\n * Use a managed **Azure Database for MySQL**: For that create a managed MySQL database in Azure and choose the appropriate pricing tier based on your application's requirements for performance, storage, and availability.\n\n * **Migrate** the existing MySQL database: For that you can use the Azure Database Migration Service (DMS) to perform an online migration with minimal downtime.\n\n * Update the application's **database connection** details: Modify the Java application's configuration to point to the newly provisioned Azure Database for MySQL. Update the connection string, hostname, port, username, and password information accordingly.\n\n * Enable **monitoring and diagnostics**: Utilize Azure Monitor to gain insights into the performance and health of your Java application and the underlying MySQL database. Set up metrics, alerts, and log analytics to proactively identify and resolve issues.\n\n * Implement **security** measures: Apply security best practices to protect your Java application and the MySQL database. This includes implementing authentication and authorization mechanisms with passwordless connections and leveraging Microsoft Defender for Cloud for threat detection and vulnerability assessments.\n\n * **Backup** your data: Azure Database for MySQL provides automated backups by default. You can configure the retention period for backups based on your requirements. You can also enable geo-redundant backups, if needed, to enhance data durability and availability.",
+      "title": "MySQL database found",
+      "severity": "potential",
+      "effort": 5,
+      "links": [
+        {
+          "url": "https://learn.microsoft.com/azure/mysql",
+          "title": "Azure Database for MySQL documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/dms",
+          "title": "Azure Database Migration Service documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/azure-monitor",
+          "title": "Azure Monitor documentation"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/defender-for-cloud",
+          "title": "Microsoft Defender for Cloud"
+        },
+        {
+          "url": "https://learn.microsoft.com/azure/mysql/single-server/concepts-backup",
+          "title": "Backup and restore in Azure Database for MySQL"
+        }
+      ],
+      "labels": [
+        "target=azure-appservice",
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "source",
+        "domain=cloud-readiness",
+        "category=database-migration",
+        "database",
+        "mysql",
+        "os=windows",
+        "os=linux"
+      ]
+    },
+    "dockerfile-00000": {
+      "id": "dockerfile-00000",
+      "description": "No Dockerfile was found in the project. This suggests the application may not yet be containerized. \nConsider creating a Dockerfile to enable container-based replatforming to Azure services such as Azure Container Apps or AKS.",
+      "title": "No Dockerfile found",
+      "severity": "mandatory",
+      "effort": 3,
+      "links": [
+        {
+          "url": "https://www.baeldung.com/java-dockerize-app",
+          "title": "Dockerizing a Java Application"
+        }
+      ],
+      "labels": [
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "capability=containerization",
+        "source",
+        "domain=cloud-readiness",
+        "category=containerization",
+        "containerization",
+        "os=windows",
+        "os=linux"
+      ]
+    },
+    "jakarta-database-00002": {
+      "id": "jakarta-database-00002",
+      "description": "The application depends on **Jakarta Persistence (JPA)** APIs (`jakarta.persistence.*` or legacy `javax.persistence.*`), which are used for object-relational mapping (ORM) and database interaction in Jakarta EE or Java EE applications.\n\nWhen migrating to Azure:\n- Ensure that the database connection, JPA provider (e.g., Hibernate, EclipseLink), and dialect are compatible with your target Azure database service.\n- Recommended database services include **Azure Database for PostgreSQL**, **Azure Database for MySQL**, or **Azure SQL Database**.\n- For containerized deployments, these JPA-based applications can run on **Azure Kubernetes Service (AKS)** or **Azure App Service for Linux/Windows**.\n- If using **Spring Data JPA**, verify that connection pool settings and environment variables are properly configured for the cloud environment.\n- Consider leveraging **Azure Key Vault** for secure storage of database credentials and connection strings.",
+      "title": "Detects usage of Jakarta Persistence (JPA) APIs",
+      "severity": "potential",
+      "effort": 5,
+      "links": [
+        {
+          "url": "https://jakarta.ee/specifications/persistence/",
+          "title": "Jakarta Persistence Specification"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-stores-getting-started#common-database-scenarios",
+          "title": "Prepare to choose a data store in Azure"
+        }
+      ],
+      "labels": [
+        "source=java",
+        "source=java-ee",
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "target=azure-appservice",
+        "domain=cloud-readiness",
+        "category=jakarta-migration",
+        "os=windows",
+        "os=linux"
+      ]
+    },
+    "localhost-jdbc-00002": {
+      "id": "localhost-jdbc-00002",
+      "description": "The app is trying to access local resource by JDBC, please try to migrate the resource to cloud",
+      "title": "Local JDBC Calls",
+      "severity": "mandatory",
+      "effort": 5,
+      "labels": [
+        "target=azure-aks",
+        "target=azure-container-apps",
+        "target=azure-appservice",
+        "capability=containerization",
+        "source",
+        "domain=cloud-readiness",
+        "category=local-resource-access",
+        "localhost",
+        "containerization",
+        "os=windows",
+        "os=linux"
+      ]
+    }
+  }
+}
